@@ -1,0 +1,37 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: rgb(168, 160, 160);
+    min-height: 500px;
+}
+
+.checkbox {
+    /* display: none; */
+}
+
+.checkboxcontainer {
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: blue;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.slider {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}

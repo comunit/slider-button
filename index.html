@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Check Box</title>
+</head>
+<body>
+    <div class="container">
+        <div class="checkbox">
+            <input type="checkbox" id="check">
+        </div>
+        <div class="checkboxcontainer">
+          <div class="checkboxslider">
+            <div class="background" id="background">
+              <div class="slider" id="slider"></div>  
+            </div>
+            
+          </div>  
+        </div>
+        
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const check = document.getElementById('check');
+        const background = document.getElementById('background');
+
+        slider.addEventListener('click', () => {
+            if(check.checked == false){
+            slider.style.transform = 'translateX(100%)';
+            check.checked = true;
+            }
+            else{
+                slider.style.transform = 'translateX(0%)';
+                check.checked = false;
+            }
+
+        })
+        
+    </script>
+</body>
+
+</html>
